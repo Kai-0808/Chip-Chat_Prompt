@@ -5,7 +5,7 @@
 日期:     2023-12-31  
 ***
 
-# ChipChat-Prompt
+# Chip-Chat_Prompt
 
 ## Part 1 : Homework and Lab of Digital Circuit System
 
