@@ -95,7 +95,7 @@ These two conditions ensure that the ball card falls between the two door cards,
 
 Let's start implementing this design idea:
 
-```systemverilog=
+```systemverilog
 module Seq(
   input clk, rst_n, in_valid,
   input [3:0] in_data,
@@ -157,7 +157,7 @@ To handle the scenario where `out_valid` should go low when there's no new `in_d
 
 Here's the modification to the design:
 
-```systemverilog=
+```systemverilog
 module Seq(
   input clk, rst_n, in_valid,
   input [3:0] in_data,
