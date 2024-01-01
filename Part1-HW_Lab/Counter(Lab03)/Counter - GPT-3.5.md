@@ -47,7 +47,7 @@ After reset, at the first time it encounters the rising edge of the clock signal
 ## Assistant (GPT-3.5):
 Certainly, here's an example implementation of the `Counter` module in SystemVerilog that meets the provided specifications and constraints:
 
-```systemverilog!=
+```systemverilog
 module Counter(
   input logic clk, rst_n,
   output logic clk2
