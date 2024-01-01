@@ -10,7 +10,7 @@
 # Chip-Chat_Prompt
 
 ## Part 1 : Homework and Lab of Digital Circuit System
-https://github.com/Kai-0808/Chip-Chat_Prompt/tree/main/Part1-HW_Lab
+
 ## Part 2 : Caravel CNN Accelerator
 
 ![PASS](https://github.com/Kai-0808/ChipChat-Prompt/assets/138969830/17dd5280-2042-4bdb-ace9-bdc1e8cced0a)
