@@ -282,7 +282,7 @@ Excellent! Please provide the full SystemVerilog code of this module. Remember t
 ## Assistant (Claude 2)
  Here is the full SystemVerilog code for the I2S receiver module based on the FSM design:
 
-```systemverilog=
+```systemverilog
 module I2S (
   input logic clk, rst_n, in_valid,
   input logic SD, WS, 
@@ -447,7 +447,7 @@ Please provide the full SystemVerilog code of this module again without any `// 
 ## Assistant (Claude 2)
 You're right, my previous code contained shortcuts. Here is the full SystemVerilog code for the I2S receiver module:
 
-```systemverilog=
+```systemverilog
 module I2S (
   input logic clk, rst_n, in_valid, 
   input logic SD, WS,
@@ -725,7 +725,7 @@ Please provide the full SystemVerilog code of this module again without any `// 
 ## Assistant (Claude 2)
  You're absolutely right, here is the final SystemVerilog code for the I2S receiver module without any shortcuts or comments:
 
-```systemverilog=
+```systemverilog
 module I2S (
   input logic clk, rst_n, in_valid,
   input logic SD, WS,
@@ -945,7 +945,7 @@ Here is the complete finite state machine design with the corrected transition c
 ### To-Do
 Below is the SystemVerilog code that Claude has written.
 
-```systemverilog=
+```systemverilog
 module I2S (
   input logic clk, rst_n, in_valid,
   input logic SD, WS,
@@ -1291,7 +1291,7 @@ Please provide the full SystemVerilog code of this module without any `// ...`.
 ## Assistant (Claude 2)
  Here is the full SystemVerilog code for the I2S module with the fixes implemented:
 
-```systemverilog=
+```systemverilog
 module I2S (
   input logic clk, rst_n, in_valid,  
   input logic SD, WS,
@@ -1498,7 +1498,7 @@ Please provide the full SystemVerilog code of this module again without any `// 
 ## Assistant (Claude 2)
  You're right, let me provide the full code again with that fix:
 
-```systemverilog=
+```systemverilog
 module I2S (
   input logic clk, rst_n, in_valid,
   input logic SD, WS,   
@@ -1666,7 +1666,7 @@ Great! With the separated `always_comb`, please provide the full SystemVerilog c
 ## Assistant (Claude 2)
 Here is the full code with the shift register logic separated out into its own always_comb block:
 
-```systemverilog=
+```systemverilog
 module I2S (
   input logic clk, rst_n, in_valid,
   input logic SD, WS,    
@@ -1870,7 +1870,7 @@ Please provide the full SystemVerilog code of this module again without any `// 
 ## Assistant (Claude 2)
 You're absolutely right, here is the full code with that last fix to use next_state instead of state for the shift register logic:
 
-```systemverilog=
+```systemverilog
 module I2S (
   input logic clk, rst_n, in_valid,  
   input logic SD, WS,
@@ -2042,7 +2042,7 @@ Please provide the full SystemVerilog code of this module again without any `// 
 ## Assistant (Claude 2)
 You're absolutely right, here is the full code with the channel logic fixed to avoid latch inference:
 
-```systemverilog=
+```systemverilog
 module I2S (
   input logic clk, rst_n, in_valid,
   input logic SD, WS,
