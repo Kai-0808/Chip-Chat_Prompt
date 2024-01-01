@@ -61,7 +61,7 @@ After reset, at the first time it encounters the rising edge of the clock signal
 ## Assistant (Claude 2)
 Here is an example implementation of the Counter module that meets the requirements:
 
-```systemverilog=
+```systemverilog
 module Counter(
   input clk, 
   input rst_n,
@@ -101,7 +101,7 @@ The code uses synchronous always_ff logic and avoided latches/race conditions. I
 ## Assistant (Claude 2)
 You're right, my previous implementation had a bug where `clk2` stays HIGH for 3 cycles instead of 2 initially. Here is an updated version that fixes this:
 
-```systemverilog=
+```systemverilog
 module Counter(
   input clk, 
   input rst_n,
@@ -156,7 +156,7 @@ To achieve this, I will initialize `clk_div_cnt` to 1 instead of 0. This will ma
 
 Here is the fixed code:
 
-```systemverilog=
+```systemverilog
 module Counter(
   input clk, 
   input rst_n,
