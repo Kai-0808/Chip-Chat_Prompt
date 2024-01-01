@@ -48,7 +48,7 @@ After reset, at the first time it encounters the rising edge of the clock signal
 ## Assistant (Bing):
 Here is an example of a SystemVerilog module that meets your specifications:
 
-```systemverilog!=
+```systemverilog
 module Counter(
   input wire clk, rst_n,
   output logic clk2
@@ -84,7 +84,7 @@ You use Verilog. That is not correct. You should use SystemVerilog.
 ## Assistant (Bing):
 I apologize for the confusion. You’re right, the code I provided was in Verilog. Here’s the corrected version in SystemVerilog:
 
-```systemverilog!=
+```systemverilog
 module Counter(
   input logic clk, rst_n,
   output logic clk2
