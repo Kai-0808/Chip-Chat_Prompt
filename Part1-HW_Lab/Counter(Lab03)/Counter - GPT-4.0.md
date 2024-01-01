@@ -52,7 +52,7 @@ The module needs to generate `clk2` whose frequency is a quarter of `clk`. To ac
 
 Here's one way to implement it:
 
-```systemverilog!=
+```systemverilog
 module Counter(
     input  logic clk, rst_n,
     output logic clk2
@@ -108,7 +108,7 @@ Given the requirements, we will still use a 2-bit counter to count up to 4 cycle
 
 After reaching `counter = 11`, it should roll over to `00` and repeat the pattern. Here's the updated design:
 
-```systemverilog!=
+```systemverilog
 module Counter(
     input  logic clk, rst_n,
     output logic clk2
@@ -205,7 +205,7 @@ Here's how it works:
 
 ### SystemVerilog Design:
 
-```systemverilog!=
+```systemverilog
 module Counter(
     input clk, rst_n,
     output logic clk2
