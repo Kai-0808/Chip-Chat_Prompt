@@ -176,7 +176,7 @@ Excellent! Please provide the full SystemVerilog code of this module. Remember t
 ## Assistant (Claude 2)
  Here is the full SystemVerilog code for the AHB interconnect module based on the state transition table:
 
-```systemverilog=
+```systemverilog
 module inter(
   input clk, rst_n, 
   input in_valid_1, in_valid_2,
@@ -481,7 +481,7 @@ Please provide the full SystemVerilog code of this module again without any `// 
 ## Assistant (Claude 2)
 Here is the complete SystemVerilog code without any comments:
 
-```systemverilog=
+```systemverilog
 module inter(
   input clk, rst_n,
   input in_valid_1, in_valid_2,  
@@ -678,7 +678,7 @@ There are two masters and two slaves. The module needs to arbitrate the two mast
 ### To-Do
 Below is the SystemVerilog code that Claude has written.
 
-```systemverilog=
+```systemverilog
 module inter(
   input clk, rst_n,
   input in_valid_1, in_valid_2,  
@@ -939,7 +939,7 @@ Please provide the full SystemVerilog code of this module without any `// ...`.
 ## Assistant (Claude 2)
 Here is the full SystemVerilog code for the AHB interconnect module:
 
-```systemverilog=
+```systemverilog
 module inter(
   input clk, rst_n,
   input in_valid_1, in_valid_2,  
@@ -1239,7 +1239,7 @@ Please provide the full SystemVerilog code of this module again without any `// 
 ## Assistant (Claude 2)
 Here is the complete SystemVerilog code for the AHB interconnect module:
 
-```systemverilog=
+```systemverilog
 module inter(
   input clk, rst_n,
   input in_valid_1, in_valid_2,  
