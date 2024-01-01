@@ -72,7 +72,7 @@ Sure, let's break down the design of the "射龍門" poker game step by step, fo
 #### Implementation:
 Let's start by defining the module and its ports:
 
-```systemverilog=
+```systemverilog
 module Seq(
   input logic clk, rst_n, in_valid,
   input logic [3:0] in_data,
@@ -83,14 +83,14 @@ module Seq(
 
 Now, let's define the internal signals and registers we'll need:
 
-```systemverilog=
+```systemverilog
   logic [3:0] shift_register [2:0]; // Shift register to store last 3 cards
   logic [3:0] win_range_min, win_range_max; // Winning range for comparison
 ```
 
 Next, let's create logic to handle the shift register operation and comparison:
 
-```systemverilog=
+```systemverilog
   // Shift the shift_register on each clock cycle
   always_ff @(posedge clk or negedge rst_n) begin
     if (!rst_n)
@@ -108,7 +108,7 @@ Next, let's create logic to handle the shift register operation and comparison:
 
 Finally, let's determine if the current sequence satisfies the winning condition and control the output signals:
 
-```systemverilog=
+```systemverilog
   // Check for winning condition
   always_comb begin
     if (in_valid) begin
@@ -140,7 +140,7 @@ Assemble the code fragments as one.
 ## Assistant (GPT-3.5):
 Certainly! Here's the complete "射龍門" poker game module with all the code fragments assembled together:
 
-```systemverilog=
+```systemverilog
 module Seq(
   input logic clk, rst_n, in_valid,
   input logic [3:0] in_data,
@@ -199,7 +199,7 @@ Fix the bug.
 ## Assistant (GPT-3.5):
 I apologize for the oversight. It seems there was an issue with the assignment of a packed array to an unpacked array. Let's correct that by modifying the initialization of the `shift_register` in the reset condition. Here's the corrected version of the code:
 
-```systemverilog=
+```systemverilog
 module Seq(
   input logic clk, rst_n, in_valid,
   input logic [3:0] in_data,
@@ -252,7 +252,7 @@ I've used the `{default: ...}` construct to initialize the unpacked array `shift
 ## Assistant (GPT-3.5):
 I apologize for the misunderstanding. Thank you for clarifying the requirements. Let's modify the code to ensure that `out_valid` is set high only when the two door cards and the ball card are available, and `out_data` is set accordingly. Here's the corrected version of the code:
 
-```systemverilog=
+```systemverilog
 module Seq(
   input logic clk, rst_n, in_valid,
   input logic [3:0] in_data,
@@ -316,7 +316,7 @@ There's an issue that if either the ball is equal to the first door or the secon
 ## Assistant (GPT-3.5):
 I apologize for the oversight. Thank you for pointing that out. Here's the revised code that takes into account the condition where the ball card is equal to either of the door cards, resulting in a losing game:
 
-```systemverilog=
+```systemverilog
 module Seq(
   input logic clk, rst_n, in_valid,
   input logic [3:0] in_data,
@@ -381,7 +381,7 @@ Great! Still, another issue is that you should see the drop of `in_valid` as tha
 ## Assistant (GPT-3.5):
 Thank you for pointing out the additional requirement. I apologize for not addressing it earlier. Here's the revised code that takes into account the dropping of `in_valid` to indicate that all cards are discarded:
 
-```systemverilog=
+```systemverilog
 module Seq(
   input logic clk, rst_n, in_valid,
   input logic [3:0] in_data,
@@ -455,7 +455,7 @@ The error messages above shows when the design is synthesized. Fix it.
 ## Assistant (GPT-3.5):
 I apologize for the confusion. It seems that concatenating an unpacked array in that way isn't supported by the synthesis tool. To work around this limitation, we can shift the array elements manually. Here's the revised code that should work without causing synthesis errors:
 
-```systemverilog=
+```systemverilog
 module Seq(
   input logic clk, rst_n, in_valid,
   input logic [3:0] in_data,
